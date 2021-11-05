@@ -15,6 +15,13 @@
         "laravel/ui": "^3.3",
         "livewire/livewire": "^2.5"
     },
+    "post-install-cmd": [
+     "php artisan clear-compiled",
+     "chmod -R 777 public/"
+     ]
+    
+    },
+    
     "require-dev": {
         "facade/ignition": "^2.5",
         "fakerphp/faker": "^1.9.1",
@@ -23,6 +30,7 @@
         "nunomaduro/collision": "^5.0",
         "phpunit/phpunit": "^9.3.3"
     },
+    
     "autoload": {
         "psr-4": {
             "App\\": "app/",
@@ -55,6 +63,7 @@
             "dont-discover": []
         }
     },
+    
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
